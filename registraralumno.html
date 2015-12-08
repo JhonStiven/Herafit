@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Registrar Alumno</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="icon" href="img/ico.ico">
+
+    
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <header>
+            <a class="page-scroll" href="#page-top" style="border: none;">
+            <img src="img/logo.png" class="img-responsive" alt="Imagen responsive">
+        </header>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav pull-right">
+            <li class="hidden">
+                <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+                <a class="page-scroll" href="indexadmin.html" style="border: none;">
+                <img src="img/1.png"><br>Inicio</a>
+            </li>
+
+            <li>
+                <a class="page-scroll" href="#catalogo" style="border: none;">
+                <img src="img/2.png"></i><br>Agenda</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="registraruser.html" style="border: none;">
+                <img src="img/3.png"><br>Registrar Usuario</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#contactenos" style="border: none;">
+                <img src="img/4.png"><br>Registrar Ejercicio</a>
+            </li>
+            <li>
+                <a style="border: none;" data-toggle="modal" data-target="#myModal">
+                <img src="img/5.png"><br>Gestionar catalogo</a>
+            </li>
+   
+        </ul>
+</nav>
+
+    <div class="container" style="margin-top:120px;">
+            <div class="row">
+
+            <!-- asignar tres grillas <div class="col-md-4"></div> y en la del medio realiar los formularios para que queden centrados -->
+              <div class="col-md-4"></div>
+                     <div class="col-md-4">
+                     <section id="registrar" class="registrar-section">
+              <center><h2>Registrar Alumno</h2></center>
+              <br>
+              <div class="form-group">
+
+        <label class="control-label col-xs-3">Genero:</label>
+        <label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Femenino
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Otro
+</label>
+        </div>
+        <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-user" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Nombre de Usuario">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-user" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Apellidos De Usuario">
+                    </div>
+                    <br>
+                     <div class="form-group">
+      <label for="sel1">Tipo De Documento</label>
+      <select class="form-control" id="sel1">
+      <option>...</option>
+        <option>C.C Cedula De Ciudadania</option>
+        <option>T.I Targeta De Identidad</option>
+      </select>
+        <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-info-sign" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Numero De Identificacion">
+                    </div>
+                    <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-lock" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-phone" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Celular">
+                    </div>
+                    <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Telefono">
+                    </div>
+                    <br>
+                  <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-globe" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Direccion">
+                    </div>
+                    <br>
+                    <!-- Se creo un input -->
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-globe" style="color:red"></span></span>
+                      <input type="text" class="form-control" placeholder="Edad">
+                    </div>
+                    <br>
+                    <label for="sel1">Reconocimiento Medico</label>
+                    <label for="sel1">(Registrar las incapacidades o estado de salud del Alumno)</label>
+                    <div class="input-group">
+
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-edit" style="color:red"></span></span>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+
+
+                     
+                      
+                      <div class="col-md-4"></div>
+            </div>
+                
+       
+                
+
+
+                
+                </div>
+                </div>
+
+
+
+
+<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+	
+</body>
+</html>
